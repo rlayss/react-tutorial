@@ -1,0 +1,75 @@
+/* 타이핑 테스트 영역 */
+.typing-test {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  text-align: center;
+}
+
+/* 타이핑 테스트 제목 */
+.typing-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #61dafb;
+}
+
+/* 타이핑 문장 박스 */
+.typing-paragraph {
+  background-color: #252526;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  line-height: 1.6;
+  border-left: 5px solid #61dafb;
+}
+
+/* 타이핑 입력창 */
+.typing-input {
+  width: 100%;
+  height: 100px;
+  font-size: 1.1rem;
+  padding: 15px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #3c3c3c;
+  border-radius: 8px;
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.typing-input:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 5px #61dafb;
+}
+
+/* 타이핑 통계 */
+.typing-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #9cdcfe;
+}
+
+/* 다시 시작 버튼 */
+.typing-restart-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.typing-restart-btn:hover {
+  background-color: #005f99;
+}

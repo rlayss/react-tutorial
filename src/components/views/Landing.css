@@ -1,0 +1,116 @@
+/* 전체 앱 컨테이너 */
+.app-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* 헤더 */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.app-subtitle {
+  font-size: 1rem;
+  color: #9cdcfe;
+}
+
+/* 메인 콘텐츠 */
+.main-content {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 타자 예시 박스 */
+.typing-preview-box {
+  background-color: #252526;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px solid #61dafb;
+}
+
+.typing-preview-text {
+  font-size: 1.1rem;
+  color: #dcdcdc;
+}
+
+/* 타자 입력창 */
+.typing-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  border: 1px solid #3c3c3c;
+  border-radius: 6px;
+  color: #ffffff;
+  resize: none;
+}
+
+.typing-input:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 5px #61dafb;
+}
+
+/* 버튼 영역 */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.start-button,
+.reset-button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.start-button {
+  background-color: #007acc;
+  color: #fff;
+}
+
+.start-button:hover {
+  background-color: #005f99;
+}
+
+.reset-button {
+  background-color: #3c3c3c;
+  color: #ccc;
+}
+
+.reset-button:hover {
+  background-color: #2a2a2a;
+}
+
+/* 푸터 */
+.app-footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer-text {
+  color: #6a9955;
+}
