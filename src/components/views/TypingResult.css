@@ -1,59 +1,89 @@
-.typing-test {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #ffffff;
+/* TypingResult.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  margin: 0;
+  padding: 0;
+}
+
+.result-page {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #252526;
+  border: 1px solid #3c3c3c;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.result-title {
+  font-size: 1.8rem;
+  color: #9cdcfe;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.typing-heading {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
+.user-ranking-highlight {
+  background-color: #333333;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  text-align: center;
+  border-left: 4px solid #569cd6;
 }
 
-.typing-paragraph {
-  background-color: #f1f5f9;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+.user-stats {
   font-size: 1.2rem;
-  color: #444;
-  line-height: 1.6;
+  color: #dcdcaa;
 }
 
-.typing-input {
-  width: 100%;
-  height: 100px;
-  font-size: 1.1rem;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  resize: none;
-  box-sizing: border-box;
-  margin-bottom: 20px;
+.ranking-title {
+  color: #c586c0;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #3c3c3c;
+  padding-bottom: 6px;
 }
 
-.typing-stats {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ranking-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #3c3c3c;
   font-size: 1rem;
-  color: #555;
+  color: #d4d4d4;
 }
 
-.typing-restart-btn {
-  padding: 12px 24px;
-  font-size: 1rem;
-  background-color: #10b981;
+.rank {
+  font-weight: bold;
+  color: #4ec9b0;
+}
+
+.rank span {
+  color: #d16969;
+  margin-left: 5px;
+}
+
+.retry-btn {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #0e639c;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.typing-restart-btn:hover {
-  background-color: #059669;
+.retry-btn:hover {
+  background-color: #1177bb;
 }

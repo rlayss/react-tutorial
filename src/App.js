@@ -5,13 +5,15 @@ import TypingResult from "./components/views/TypingResult";
 
 function App() {
   const [viewName, setViewName] = useState("Landing");
-
+  const [typingScore, setTypingScore] = useState(null);
   return (
     <>
       {viewName === "Landing" && <Landing setViewName={setViewName} />}
-      {viewName === "TypingTest" && <TypingTest setViewName={setViewName} />}
+      {viewName === "TypingTest" && (
+        <TypingTest setViewName={setViewName} setTypingScore={setTypingScore} />
+      )}
       {viewName === "TypingResult" && (
-        <TypingResult setViewName={setViewName} />
+        <TypingResult setViewName={setViewName} typingScore={typingScore} />
       )}
     </>
   );
